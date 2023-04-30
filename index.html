@@ -1,47 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xiangru(Jane) Li</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <main>
-    <section id="home">
-      <h1>Welcome to My Portfolio</h1>
-      <!-- Home page content goes here -->
-    </section>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-    <section id="about">
-      <h2>About Me</h2>
-      <!-- About page content goes here -->
-    </section>
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-    <section id="portfolio">
-      <h2>My Portfolio</h2>
-      <!-- Portfolio page content goes here -->
-    </section>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <!-- Contact page content goes here -->
-    </section>
-  </main>
+        <title>Portfolio website Xiangru(Jane) Li</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Xiangru(Jane) Li
+                </a>
 
-  <footer>
-    <p>&copy; 2023 My Portfolio</p>
-  </footer>
-</body>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-5-line"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="ri-trophy-line"></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="ri-image-line"></i> Projects
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__buttons">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid section__border">
+                    <div class="home__data grid">
+                        <h1 class="home__title">
+                            Hi, this is Jane! <br>
+                            Data Scientist <br>
+                            Based In Silicon Valley <br>
+                        </h1>
+
+                        <div class="home__blob grid">
+                            <div class="home__perfil">
+                                <img src="assets/img/janeli.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <ul class="home__social">
+                            <a href="https://www.linkedin.com/in/xiangru-li/" target="_blank" class="home__social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+
+                            <a href="https://github.com/janeliii2021/janeliii2021.github.io" target="_blank" class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+
+                        </ul>
+                    </div>
+
+                    <!--==================== HOME INFO 1 ====================-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                BIOGRAPHY
+                            </h3>
+                            
+                            <p class="home__info-description">
+                                Hello, and welcome to Jane's personal portfolio page!<br>
+                                I am Jane, a skilled data scientist with a passion for <br> 
+                                building real-time machine learning models,such as recommendation systems.<br>
+                                I am also enthusiastic about deep learning and generative AI. <br>
+                                To advance my career and broaden my skills, I am currently attending a full stack programming coding bootcamp <br>
+                                provided by MITxPro. 
+                            </p>
+                        </div>
+
+                        <div>
+                        </div>
+
+                        <div>
+                            <h3 class="home__info-title">
+                                CONTACT
+                            </h3>
+
+                            <p class="home__info-description">
+                                janeliii2021@gmail.com <br>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!--==================== HOME INFO 2 ====================-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">GITHUB NAME</h3>
+                            <p class="home__info-description">janeliii2021</p>
+                        </div>
+
+                        <div>
+                            <h3 class="home__info-title">
+                                YEARS OF EXPERIENCE
+                            </h3>
+
+                            <p class="home__info-number">
+                                08+
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="home__info-title">
+                                COMPLETED PROJECTS
+                            </h3>
+
+                            <p class="home__info-number">
+                                20+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--==================== YouTube Intro ====================-->
+            <section class="youtube section" id="intro">
+                <h2 class="section__title">Meet Me on YouTube</h2>
+                <span class="section__subtitle">Come to learn more about me</span>
+                <div class="youtube__content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LZMulq9fWEg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+            </section>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My favorite skills</span>
+
+                <div class="skills__container container grid section__border">
+                    <!--==================== SKILLS 1 ====================-->
+                    <div class="skills__content">
+
+                        <div class="skills__info">
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/python.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">Python</h3>
+                                <span class="skills__subtitle">Advanced</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/Apache_Spark_logo.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">Apache Spark</h3>
+                                <span class="skills__subtitle">Intermediate</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/sql-server.png" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">SQL</h3>
+                                <span class="skills__subtitle">Advanced</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/Tensorflow_logo.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">Tensorflow</h3>
+                                <span class="skills__subtitle">Intermediate</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/PyTorch_logo_icon.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">Pytorch</h3>
+                                <span class="skills__subtitle">Intermediate</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/airflow.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">Airflowflow</h3>
+                                <span class="skills__subtitle">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">I am excited to present my web development skills that I have acquired through MIT xPro full stack programming bootcamp <br>
+                through the projects below</span>
+
+                <div class="container section__border">
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+                            <!--==================== PROJECT 1 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/pacman.png" alt="projects image" class="projects__img">
+    
+                                <div>
+                                    <span class="projects__subtitle">You will see a PacMan moving across the screen<br> 
+                                        the PacMan changes direction when it reaches <br>
+                                        the boundaries of the webpage</span>
+                                    <h1 class="projects__title">PacMen</h1>
+                                    <a href="#" class="projects__button">
+                                        Go to Github <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--==================== PROJECT 2 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/eye_move.png" alt="projects image" class="projects__img">
+    
+                                <div>
+                                    <span class="projects__subtitle">The Eye Movement project allows you to move eye balls <br>
+                                        when you move your cursor on the screen</span>
+                                    <h1 class="projects__title">Mouse Tracking Eye Movement</h1>
+                                    <a href="#" class="projects__button">
+                                        Go to Github <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--==================== PROJECT 3 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/bus.png" alt="projects image" class="projects__img">
+    
+                                <div>
+                                    <span class="projects__subtitle">The bus tracker project shows the bus stops between MIT and Harvard</span>
+                                    <h1 class="projects__title">Real-time Bus Tracker</h1>
+                                    <a href="#" class="projects__button">
+                                        Go to Github <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <!-- Swiper arrows -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+    
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+    
+                        <!-- Swiper pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Xiangru(Jane) Li</h1>
+                <p>Data Scientist</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="https://github.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+
+                </ul>
+            </div>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!--=============== EMAIL JS ===============-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
